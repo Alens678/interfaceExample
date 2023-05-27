@@ -5,10 +5,74 @@
 form {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+    margin-bottom: 20px;
 }
 
+
 body {
-    background-color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
- }
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para secciones de vehículos */
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cars h1 {
+    color: #007bff;
+  }
+  
+  .motos h1 {
+    color: #dc3545;
+  }
+  
+  .bicis h1 {
+    color: #28a745;
+  }
+  
+  /* Estilos para listas de vehículos */
+  #car_list,
+  #moto_list,
+  #bici_list {
+    margin-top: 10px;
+  }
+  
+  #car_list p,
+  #moto_list p,
+  #bici_list p {
+    margin: 0;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+  }
+  
