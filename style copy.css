@@ -4,8 +4,10 @@
 }
 /*  GLOBALS  */
 body {
-  background-color: aliceblue;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
 }
 header {
   padding:20px;
@@ -49,14 +51,14 @@ button {
     border: 0px;
 }
 .coche{
-    background-color: chocolate;
+    background-color: #007bff;
 }
 .moto{
-    background-color: blue;
+    background-color: #dc3545;
 
 }
 .bici{
-    background-color: green;
+    background-color: #28a745;
 
 }
 .ocultar{
@@ -73,3 +75,18 @@ main #listados {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 25px;
 }
+  /* Estilos para listas de vehículos */
+  #car_list,
+  #moto_list,
+  #bici_list {
+    margin-top: 10px;
+  }
+  
+  #car_list p,
+  #moto_list p,
+  #bici_list p {
+    margin: 0;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+  }
