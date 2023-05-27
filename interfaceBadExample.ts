@@ -54,5 +54,4 @@ class bici implements vehicule{
         this.neumaticos = neumaticos;
         this.puertas = puertas;
     }
-
 }

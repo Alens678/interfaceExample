@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interface Segregation Principle</title>
+  </head>
+  <body>
+    <header>
+      <h1>Principio de Segregación de Interfaces</h1>
+      <h2>
+        Ninguna clase debe de ser forzada a implementar métodos de interfaces
+        que no utiliza.
+      </h2>
+    </header>
+    <main>
+        <h2>Añade vehiculos segun su clase, ten en cuenta que las motos y las bicis no tienen puertas</h2>
+      <nav>
+        <button id="coche-btn" class="coche">Coche</button>
+        <button id="moto-btn" class="moto">Moto</button>
+        <button id="bici-btn" class="bici">Bici</button>
+      </nav>
+      <section>
+        <form action="">
+          <div id="formulario">
+            Marca<select name="marca" id="marca">
+              <option value="honda">Honda</option>
+              <option value="seat">Seat</option>
+              <option value="tesla">Tesla</option>
+              <option value="volkswagen">Volkswagen</option>
+              <option value="yamaha">Yamaha</option>
+            </select>
+            Modelo: <input type="text" id="modelo-input" /> Num. neumaticos:
+            <input type="text" id="neumaticos-input" value="4" disabled /> Num.
+            Puertas:
+            <input
+              type="text"
+              id="puertas-input"
+              onchange="validarEsNum('puertas-input')"
+            />
+            Es eléctrico? <input type="checkbox" />
+          </div>
+          <button disabled>Crear</button>
+        </form>
+      </section>
+      <div id="listados">
+      <section id="cars" class="coche">
+        <h1>CARS</h1>
+        <div id="car-list"></div>
+      </section>
+      <section id="motos" class="moto">
+        <h1>MOTO</h1>
+        <div id="moto-list"></div>
+      </section>
+      <section id="bicis" class="bici">
+        <h1>BICIS</h1>
+        <div id="bici-list"></div>
+      </section>
+    </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="build/interfaceGoodExample.js"></script>
+  </body>
+</html>

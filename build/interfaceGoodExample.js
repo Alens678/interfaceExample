@@ -1,6 +1,6 @@
 "use strict";
 class carG {
-    constructor(electrico, marca, tipo, modelo, neumaticos, puertas) {
+    constructor(electrico, marca, modelo, neumaticos, puertas) {
         this.marca = marca;
         this.modelo = modelo;
         this.neumaticos = neumaticos;
@@ -25,4 +25,10 @@ class biciG {
     }
 }
 const vehicule1 = new motoG(false, "honda", 2003, 2);
+const vehicule2 = new biciG(false, "mtb", 2020, 2);
+const vehicule3 = new carG(true, "volkswagen", 2023, 4, 5);
+const vehicule4 = new carG(false, "Homda", 2019, 4, 5);
 console.log(vehicule1);
+console.log(vehicule2);
+console.log(vehicule3);
+console.log(vehicule4);
