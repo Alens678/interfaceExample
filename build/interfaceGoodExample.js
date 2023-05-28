@@ -3,7 +3,7 @@ class carG {
     constructor(electrico, marca, modelo, neumaticos, puertas) {
         this.marca = marca;
         this.modelo = modelo;
-        this.neumaticos = neumaticos;
+        this.neumaticos = 4;
         this.puertas = puertas;
         this.electrico = electrico;
     }
